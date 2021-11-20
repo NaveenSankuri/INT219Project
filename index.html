@@ -3,6 +3,9 @@
     <head>
         <title>Naveen Corier</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
         <link rel="stylesheet" href="C:\Users\husur\OneDrive\Desktop\Web\css\all.css">
     </head>
     <body>
@@ -13,27 +16,41 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li class="lihome"><a href="#"><i class="fa fa-home" aria-hidden="true">HOME</i></a></li>
-                        <li><a href="QuickSearch.html" target="blank ">QuickStart</a>
+                        <li class="lihome"><a href="index.html" ><i class="fa fa-home" aria-hidden="true">HOME</i></a></li>
+                        <li><a href="index.html">QuickStart</a>
                             <div class="sub-menu">
                                 <ul>
-                                    <li><a href="#">1</a></li>
-                                   <li><a href="#">S2</a></li>
-                                   <li><a href="#">S3</a></li>
+                                   <hr><li><a href="quickstart\ship.html">Ship</a></li><hr>
+                                  
+                                   <li><a href="quickstart\bill.html">Pay Bills</a></li><hr>
                                 </ul>
                             </div>
                         
                         </li>
-                        <li><a href="#">Tracking</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Services</a></li>
+                        
+                        <li><a href="#">Tracking</a>
+                            <div class="sub-menu2">
+                                <div class="x">
+                                    <h5><i><u>QUICK LINKS TO TRACK</u> <u>A</u></i></h5><br>
+                                    <a href="quickstart/track.html">Track</a><br><br>
+                                    <a href="quickstart\his.html">History</a>
+                                </div>
+                                <div class="y">
+                                    <h5><i><u>NC is My Choice </u></i></h5><br>
+                                   <a href="quickstart/choice.html">Explore managing Home Deliveries</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li><a href="#ser" >Services</a></li>
+                        <li class="lihome"><a href="#contact" >ContactUs</i></a></li>
                     </ul>
                 </div>
-
+              
                 <div class="list1">
                     <ul>
-                        <li><a href="#">Coustumer Support</a>
-                        <li><a href="#">Location</a>
+                        <li><a href="quickstart/cs.html">Coustumer Support</a>
+            
                         <li><a href="#">Language</a>   
                     </ul>
                 </div>
@@ -42,11 +59,264 @@
                     <a href="#"><button class="btn">Search</button></a>
                 </div>
                 <div class="user">
-                    <a href="#" > <i class="fa fa-user" aria-hidden="true"></i> </a>   
+                    <a href="#" > <i class="fa fa-user"  id="login-btn" aria-hidden="true"></i> </a> 
+                    <!-- login form container  -->  
+                    <div class="login-form-container">
+                        
+
+                        <i class="fas fa-times" id="form-close"></i>
+                    
+                        <form action="">
+                            <h3>login</h3>
+                            <input type="email" class="box" placeholder="enter your email">
+                            <input type="password" class="box" placeholder="enter your password">
+                             
+                             <button type="button" onclick="LoginFunction()"><input type="submit" class="btn" value="Login now"></button>
+                            <br><input type="checkbox" id="remember">
+                            <label for="remember">remember me</label>
+                            <span>forget password? <a href="#">click here</a></span><br>
+                            <span>don't have and account? <a href="#">register now</a></span>
+                        </form>
+                    
+                    </div>  
                 </div>
                 
+                
+
+
             </div>
         </div>
         
+        <section class="ser" id="ser">
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+            <div   class="card1">
+                <div  class="card__inner">
+                    <div id="sf1" class="card__face card__face--front">
+                        <h2>Standard courier</h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                
+                                <h2>Normal</h2>
+                            </div>
+                            <div class="card__body">
+                                
+                                <h3>Standard courier services involve collecting the parcels, sorting the parcels, and transferring the parcels to the closest depot to the delivery location</h3>
+                                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="card2">
+                <div  class="card__inner2">
+                    <div id="sf2" class="card__face card__face--front">
+                        <h2>Overnight service</h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                
+                                <h2>Over_Night</h2>
+                            </div>
+                            <div class="card__body">
+                                
+                                <h3>Overnight service is the same as standard service, but slightly more expensive, and the parcel is guaranteed to be delivered by the next day.</h3>
+                                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="card3">
+                <div  class="card__inner3">
+                    <div id="sf3" class="card__face card__face--front">
+                        <h2>SAME_DAY</h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                
+                                <h2>SAME_DAY</h2>
+                            </div>
+                            <div class="card__body">
+                                
+                                <h3>Same-day express courier is the most expensive of all courier services and used for deliveries that are of an urgent nature.</h3>
+                                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="card4">
+                <div  class="card__inner4">
+                    <div id="sf4" class="card__face card__face--front">
+                        <h2>International<br> courier</h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                
+                                <h2>FAR</h2>
+                            </div>
+                            <div class="card__body">
+                                
+                                <h3>International courier service is used for transfer of goods overseas. The price varies greatly depending on the size of the package and speed required.</h3>
+                                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        <!-- services section starts  -->
+
+<section class="AboutUs" id="AboutUs">
+
+    <h1 class="heading">
+        <span>A</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>U</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <h3>Fast Delivery <br><span>fast Delivery provides excellent<br> customer service and always works <br>with our best interests</span></h3>
+           
+        </div>
+        <div class="box">
+            <i class="fas fa-certificate"></i>
+            <h3>International<br>Certified</h3>
+            <span>International courier services providers<br> in india. We offer shipping, airfreight, <br>ocean freight, inland transportation, customs<br> clearance and other additional services.</ span>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <span>Naveen_Couriers Ground’s independent contractors (IC)<br> and their employees, independent service<br> providers (ISP) and their employees are aware of<br> relevant workplace safety guidelines. Safety is an<br> integral part of Courier Ground’s business</span>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+             <span>
+                Now we ship anywhere and all over the world Honest And<br> Dependable Spacepegasus is a leading provider of express<br> courier and logistics services, our countrywide<br> presence comprising an extensive network of<br> over 60 sites allows us to provide top quality<br> logistical services to our customers.
+            </span> 
+        </div>
+        <div class="box">
+            <i class="fas fa-users"></i>
+            <h3>Work Force</h3>
+            <span> Believe to invest in our employee’s skill <br>up-gradation to boost their morale, make them <br>learn through real time challenges and practical <br>exposure. This also help to build an equal <br>opportunity platform where great ideas originates<br> and unleash the power of a diverse workforc</span>
+        </div>
+        <div class="box">
+            <i class="fas fa-truck"></i>
+            <h3>Courier + +</h3>
+            <span>Courier Plus assures Next Business Day (NBD) delivery<br> on priority in all metros and major cities. This<br> service includes: Delivery of documents and packages<br> up to 10 kilos; Online track and trace status of<br> consignments </span>
+        </div>
+
+    </div>
+
+</section>
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="contact-img.svg" alt="">
+        </div>
+
+        <form  class="details" action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="10" rows="5"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- services section ends --> 
+      <!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="xbox">
+            <h3>About Us</h3>
+            
+        </div>
+        <div class="xbox">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="xbox">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="quickstart/ship.html">book</a>
+            
+            <a href="#ser">services</a>
+           
+            <a href="#AboutUs">Information</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="xbox">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/">facebook</a>
+            <a href="https://www.instagram.com/">instagram</a>
+            <a href="https://www.twitter.com/">twitter</a>
+            <a href="https://www.linkedin.com/">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> mr.Sankuri</span> | all rights reserved! </h1>
+
+</section>
+  
+        
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

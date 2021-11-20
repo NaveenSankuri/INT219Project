@@ -29,9 +29,10 @@
     
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 25px;
     color:black;
 }
+/* Menu Starts */
 .menu{
     margin-top: -72px;
     height:70px;
@@ -55,25 +56,40 @@
     transition: 0.6s ease-in-out;
 }
 .menu ul li a:hover{
-    color: orangered;
+    color: rgb(243, 111, 111);
+}
+a{
+  text-decoration: none;
+  
 }
 .sub-menu{
     display:none;
     cursor: pointer;
-    padding-top: 0%;
+   
    }
+   .sub-menu ul li{
+    list-style: none;
+    margin: 5px 60px;
+    padding: 0%;
+    
+}
+
+.sub-menu ul li a{
+    padding: 0%;
+}
+
    .menu ul li:hover .sub-menu{
        display: block;
        position: absolute;
-      
+       left:400px;
        margin-top:0px;
        margin-left:0px;
-       background: orangered;
+       
    }
    .menu ul li:hover .sub-menu ul{
        display: block;  
        margin:10px;
-       background: orangered;
+       background: rgb(164, 212, 231);
        text-align: center;
    }
    .menu ul li:hover .sub-menu ul li{
@@ -84,6 +100,34 @@
        border-radius: 0px;
        text-align: center;
    }
+   .sub-menu2{
+    border:1px solid oldlace;
+    display: none;
+    position: absolute;
+    left: 0px;
+    margin-top:0px;
+    padding-top:10px ;
+    cursor: pointer;
+    width: 1527px;
+    height: 150px;
+    padding-left: 5px;
+    background-color:  rgb(164, 212, 231);
+   }
+  
+   .menu ul li:hover .sub-menu2{
+    display: block;
+    position: absolute;  
+ }
+ .x{
+     position: absolute;
+     left: 40px;
+ }
+ .y{
+     position: absolute;
+     left: 500px;
+ }
+/* Menu Ends */
+ /* List Starts */
 .list1{
     position: absolute;
     left: 1100px;
@@ -106,14 +150,12 @@
     color: orangered;
 
 }
-
+/* List Ends */
 .search{
-   float:left;
-   position: absolute;
-   left:1350px;
-   margin-top: 50px;
    
-}
+    position: absolute;
+    left:1350px;  
+ }
 .user{
     float:left;
     position: absolute;
@@ -134,7 +176,6 @@
  }
  body{  width: 100%;
     height: 100vh;
-    
     background-repeat: no-repeat;
     background-position: fixed;
     background-size:  100% 100vh;
@@ -153,7 +194,7 @@ p{
  .search{
     width: 300px;
     float: left;
-    margin-top: 45px;
+    margin-top: 37px;
     margin-left: -300px;
     
 }
@@ -190,5 +231,790 @@ p{
 .lihome{
     padding-left:5px;
 }
+.heading{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+  .login-form-container{
+    position: fixed;
+    top:-120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form-container.active{
+    top:0;
+  }
+  
+  .login-form-container form{
+    margin:2rem;
+    padding:1.5rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    width:35rem;
+   
+  }
+  
+  .login-form-container form h3{
+    font-size: 1.5rem;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+    padding:1rem 0;
+  }
+  
+  .login-form-container form .box{
+    width:95%;
+    padding:0.5rem;
+    font-size: 1.7rem;
+    color:#333;
+    margin:.3rem 0;
+    border:.1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+  }
+  
+  .login-form-container form .box:focus{
+    border-color: var(--orange);;
+  }
+  
+  .login-form-container form #remember{
+    margin:2rem 0;
+  }
+  
+  .login-form-container form label{
+    font-size: 1.5rem;
+  }
+  
+  .login-form-container form .btn{
+    display: block;
+    width:100%;
+  }
+  
+  .login-form-container form p{
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#666;
+  }
+  
+  .login-form-container form p a{
+    color:var(--orange);
+  }
+  
+  .login-form-container form p a:hover{
+    color:#333;
+    text-decoration: underline;
+  }
+  
+  .login-form-container #form-close{
+    position: absolute;
+    top:2rem; right:3rem;
+    font-size: 5rem;
+    color:#fff;
+    cursor: pointer;
+  }
+  /*
+  
+  
+  Header Ends
+  
+  
+  
+  */
+  .Service{
+      width: 100vh;
+      height:100vh;
+      position:static;
+  }
 
+:root {
+    --primary: #FFCE00;
+    --secondary: #FE4880;
+    --dark: #212121;
+    --light: #F3F3F3;
+  }
+  
+  
+  
+  body {
+    font-family: montserrat, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  
+  
+  .card1{
+    position: relative;
+    left: 50px;
+    margin:30px 40px;
+    width: 300px;            
+    height: 400px;
+    perspective: 1000px;
+    z-index: -1;
+  }
+  .card__inner.is-flipped {
+    transform: rotateY(180deg);
+  }
+  .card__inner {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .card2{
+    position: relative;
+    left: 400px;
+    margin: 30px 40px;
+    width: 300px;            
+    height: 400px;
+    z-index: -1;
+    perspective: 1000px;
+  }
+  .card__inner2 {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .card__inner2.is-flipped2 {
+    transform: rotateY(180deg);
+  }
+  
+  .card3{
+    position: relative;
+    left: 750px;
+    margin:30px 40px;
+    width: 300px;            
+    height: 400px;
+    perspective: 1000px;
+    z-index: -1;
+  }
+  .card__inner3 {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relatives;
+  }
+  .card__inner3.is-flipped3 {
+    transform: rotateY(180deg);
+  }
+  
+  .card4{
+    position: relative;
+    left: 1100px;
+    margin: 30px 40px;
+    width: 300px;            
+    height: 400px;
+    perspective: 1000px;
+    z-index: -1;
+  }
+  .card__inner4 {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .card__inner4.is-flipped4 {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+  }
+  
+  .card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+  }
+  
+  .card__content {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+  }
+  
+  .card__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 0px;
+  }
+  
+  .pp {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    object-fit: cover;
+  }
+  
+  .card__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .card__body {
+    padding: 30px;
+  }
+  
+  .card__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  #sf1{
+    background-image: url("international4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #sf2{
+    background-image: url("overnight.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #sf3{
+    background-image: url("24HLOGISTICS-COURIER.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #sf4{
+    background-image: url("international.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  /* 
+  
+  Service Ends
+  
+  */
 
+  .AboutUs{
+    margin-top:430px;
+    z-index:1;
+  }
+  .box-container{
+      z-index:-1;
+  }
+  .box{
+      width: 50%;
+      height: 70%;
+  }
+  .AboutUs .box-container{
+    gap:1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .AboutUs .box-container .box{
+    flex:1 1 30rem;
+
+    border-radius: .5rem;
+    padding:1rem;
+    text-align: center;
+  }
+  
+  .AboutUs .box-container .box i{
+    padding:3 rem;
+    font-size: 3.5rem;
+    color: orange;
+  }
+  
+  .AboutUs .box-container .box h3{
+    font-size: 2rem;
+    color:#333;
+  }
+  
+  .AboutUs .box-container .box span{
+
+    font-size: 1.5rem;
+    color:lightgray;
+    
+  }
+  
+  .AboutUs .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+  }
+  /* 
+  
+  
+  contact
+  
+  
+  
+  */
+  .contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    width:100%;
+  }
+  
+  .contact .row .image{
+    flex:1 1 35rem;
+    margin-left: 70px;
+  }
+  
+  .contact .row .image img{
+    width:80%;
+  }
+  
+  .contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    
+    
+  }
+  
+  .contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .inputBox [type=text]
+  {
+    border-radius: 10px;
+  }
+
+  .inputBox [type=email]
+  {
+    border-radius: 10px;
+  }
+  .inputBox [type=number]{
+    border-radius: 10px;
+ 
+  }
+  
+  .details{
+
+    width:10px;
+    
+    margin: 40px;
+  }
+  .contact .row form .inputBox input, .contact .row form textarea{
+    width:40%;
+    margin:1rem 0;
+    padding:1rem;
+    font-size: 1.0rem;
+    /* color:#333; */
+    background:#f7f7f7;
+    text-transform: none;
+  }
+  
+  .contact .row form textarea{
+    height: 12rem;
+    resize: none;
+    width: 95%;
+  }
+  
+  .brand-container{
+    text-align: center;
+  }
+  /*footer*/
+  .footer{
+    background:#333;
+  }
+
+  
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    
+  }
+  
+  .footer .box-container .xbox{
+    padding:1rem 0;
+    flex:1 1 10rem;
+  }
+  
+  .footer .box-container .xbox h3{
+    font-size: 2.5rem;
+    padding:.7rem 0;
+    color:#fff;
+  }
+  
+  .footer .box-container .xbox p{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+
+  .footer .box-container .xbox a{
+    display: block;
+    font-size: 25px;
+    padding: 10px 5px 5px 5px; 
+    color:#eee;
+  }
+
+ .xbox{
+   padding: 0px;
+ }
+  
+  .footer .box-container .xbox a:hover{
+    color:var(--orange);
+    text-decoration: underline;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding:2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color:#fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+  }
+  
+  .footer .credit span{
+    color:var(--orange);
+  }
+  
+  :root {
+    --primary: #FFCE00;
+    --secondary: #FE4880;
+    --dark: #212121;
+    --light: #F3F3F3;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: montserrat, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .card1{
+    position: absolute;
+    left: 50px;
+    margin:30px 40px;
+    width: 300px;            
+    height: 400px;
+    perspective: 1000px;
+    z-index: -1;
+  }
+  .card__inner.is-flipped {
+    transform: rotateY(180deg);
+  }
+  .card__inner {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .card2{
+    position: absolute;
+    left: 400px;
+    margin: 30px 40px;
+    width: 300px;            
+    height: 400px;
+    
+    perspective: 1000px;
+  }
+  .card__inner2 {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .card__inner2.is-flipped2 {
+    transform: rotateY(180deg);
+  }
+  
+  .card3{
+    position: absolute;
+    left: 750px;
+    margin:30px 40px;
+    width: 300px;            
+    height: 400px;
+    perspective: 1000px;
+  }
+  .card__inner3 {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .card__inner3.is-flipped3 {
+    transform: rotateY(180deg);
+  }
+  
+  .card4{
+    position: absolute;
+    left: 1100px;
+    margin: 30px 40px;
+    width: 300px;            
+    height: 400px;
+    perspective: 1000px;
+  }
+  .card__inner4 {
+    width: 300px;            
+    height: 400px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .card__inner4.is-flipped4 {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+  }
+  
+  .card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+  }
+  
+  .card__content {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+  }
+  
+  .card__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 0px;
+  }
+  
+  .pp {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    object-fit: cover;
+  }
+  
+  .card__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .card__body {
+    padding: 30px;
+  }
+  
+  .card__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  #sf1{
+    background-image: url("international4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #sf2{
+    background-image: url("overnight.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #sf3{
+    background-image: url("24HLOGISTICS-COURIER.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #sf4{
+    background-image: url("international.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+  html{
+    font-size: 55%;
+  }
+
+}
+
+@media (max-width:991px){
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu-bar{
+    display: initial;
+  }
+
+  header .nav{
+    position: absolute;
+    top:100%; right:0; left: 0;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    padding:1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .nav.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .nav a{
+    display: block;
+    border-radius: .5rem;
+    padding:1.5rem;
+    margin:1.5rem 0;    
+    background:#222;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .heading span{
+    font-size: 2.5rem;
+  }
+
+  .contact .row form .inputBox input{
+    width:100%;
+  }
+
+}

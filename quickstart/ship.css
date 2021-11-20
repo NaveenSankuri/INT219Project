@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;  
+}
+.logo{
+    width: 250px;
+    height: 70px;
+    float: left;
+}
+.nav{
+    width:1550px;
+    padding-left: 30px;
+    height:90px;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 30px;
+    position: fixed;
+    background-color:rgb(164, 212, 231)   ;
+    border-bottom:1px solid whitesmoke;
+}
+.logoo{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 25px;
+    color:black;
+}
+/* Menu Starts */
+.menu{
+    margin-top: -72px;
+    height:70px;
+    width:300px;
+}
+.menu ul{
+    float: left;
+    display: flex;
+    margin-left: 250px;
+}
+.menu ul li{
+    list-style: none;
+    margin: -10px 30px;
+    left: 200px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(19, 14, 14);
+    font-weight: bold;
+    
+    transition: 0.6s ease-in-out;
+}
+.menu ul li a:hover{
+    color: rgb(243, 111, 111);
+}
+a{
+  text-decoration: none;
+  
+}
+.sub-menu{
+    display:none;
+    cursor: pointer;
+   
+   }
+   .sub-menu ul li{
+    list-style: none;
+    margin: 5px 60px;
+    padding: 0%;
+    
+}
+
+.sub-menu ul li a{
+    padding: 0%;
+}
+
+   .menu ul li:hover .sub-menu{
+       display: block;
+       position: absolute;
+       left:400px;
+       margin-top:0px;
+       margin-left:0px;
+       
+   }
+   .menu ul li:hover .sub-menu ul{
+       display: block;  
+       margin:10px;
+       background: rgb(164, 212, 231);
+       text-align: center;
+   }
+   .menu ul li:hover .sub-menu ul li{
+       display: block;
+       border-bottom:1px dotted orangered;
+       width:20px;
+       padding: 5px;
+       border-radius: 0px;
+       text-align: center;
+   }
+   .sub-menu2{
+    border:1px solid oldlace;
+    display: none;
+    position: absolute;
+    left: 0px;
+    margin-top:0px;
+    padding-top:10px ;
+    cursor: pointer;
+    width: 1527px;
+    height: 150px;
+    padding-left: 5px;
+    background-color:  rgb(164, 212, 231);
+   }
+  
+   .menu ul li:hover .sub-menu2{
+    display: block;
+    position: absolute;  
+ }
+ .x{
+     position: absolute;
+     left: 40px;
+ }
+ .y{
+     position: absolute;
+     left: 500px;
+ }
+/* Menu Ends */
+ /* List Starts */
+.list1{
+    position: absolute;
+    left: 1100px;
+    width: 500px;
+    float: left;
+    height: 30px;
+}
+.list1 ul li{
+    list-style: none;
+    margin: 10px 30px;
+    float:left
+}
+ .list1 ul li a{
+    color: blue;
+    font-weight: normal;
+    font-size: 15px;
+    transition: 0.8s ease-in-out;
+}
+.list1 ul li a:hover{
+    color: orangered;
+
+}
+/* List Ends */
+.search{
+   
+    position: absolute;
+    left:1350px;  
+ }
+.user{
+    float:left;
+    position: absolute;
+    left:1400px;
+    margin-top: 50px;
+    transition: 0.6 ease-in-out;
+    
+ }
+ .user a{
+     background-color: yellow;
+
+     border-radius: 130px;
+     padding: 15px;
+     transition: 0.5 ease;
+ }
+ .user a:hover{
+    background-color: lightyellow;
+ }
+ body{  width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size:  100% 100vh;
+    background-image: url(web5image2.jpg);
+    
+}
+p{
+    position: absolute; 
+    top:1400px;
+    left: 30px;
+}
+ span{
+     color: red;
+ }
+ 
+ .search{
+    width: 300px;
+    float: left;
+    margin-top: 37px;
+    margin-left: -300px;
+    
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid orange;
+    margin: top 13px; 
+    color:#fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: orange;
+    border: 2px solid orange;
+    font-size: 15px;
+    border-bottom-right-radius:5px ;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.lihome{
+    padding-left:5px;
+}
+.heading{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+  .login-form-container{
+    position: fixed;
+    top:-120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form-container.active{
+    top:0;
+  }
+  
+  .login-form-container form{
+    margin:2rem;
+    padding:1.5rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    width:35rem;
+   
+  }
+  
+  .login-form-container form h3{
+    font-size: 1.5rem;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+    padding:1rem 0;
+  }
+  
+  .login-form-container form .box{
+    width:95%;
+    padding:0.5rem;
+    font-size: 1.7rem;
+    color:#333;
+    margin:.3rem 0;
+    border:.1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+  }
+  
+  .login-form-container form .box:focus{
+    border-color: var(--orange);;
+  }
+  
+  .login-form-container form #remember{
+    margin:2rem 0;
+  }
+  
+  .login-form-container form label{
+    font-size: 1.5rem;
+  }
+  
+  .login-form-container form .btn{
+    display: block;
+    width:100%;
+  }
+  
+  .login-form-container form p{
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#666;
+  }
+  
+  .login-form-container form p a{
+    color:var(--orange);
+  }
+  
+  .login-form-container form p a:hover{
+    color:#333;
+    text-decoration: underline;
+  }
+  
+  .login-form-container #form-close{
+    position: absolute;
+    top:2rem; right:3rem;
+    font-size: 5rem;
+    color:#fff;
+    cursor: pointer;
+  }
+  /*
+  
+  
+  Header Ends*/
+  .book .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.book .row .image{
+  flex:1 1 40rem;
+}
+
+.book .row .image img{
+  width:100%;
+}
+
+.book .row form{
+  flex:1 1 40rem;
+  padding:2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.book .row form .inputBox{
+  padding:.5rem 0;
+}
+
+.book .row form .inputBox input{
+  width:90%;
+  padding:1rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  font-size: 1.7rem;
+  color:#333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3{
+  font-size: 2rem;
+  padding:1rem 0;
+  color:#666;
+}
+.book{
+    padding-top: 80px;
+}
+.History{
+    padding-top: 100px;
+}
+.pay{
+    padding-top: 100px;
+    width: 50%;
+    height: auto;
+    margin-left: 80px;
+}
+
+.bill{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    
+  }
+  
+  .bill .image{
+    flex:1 1 40rem;
+  }
+  
+  .bill .image img{
+    width:100%;
+  }
+  
+  .bill form{
+    flex:1 1 40rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+  }
+  
+  .bill form .inputBox{
+    padding:.5rem 0;
+  }
+  
+  .bill form .inputBox input{
+    width:90%;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+  }
+  
+    .bill form .inputBox h3{
+    font-size: 2rem;
+    padding:1rem 0;
+    color:#666;
+  }
+  .Support{
+      padding-top: 100px;
+      font-size: 16px;
+      color: orangered;
+      margin-left: 20px;
+  }
