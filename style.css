@@ -341,6 +341,7 @@ p{
       width: 100vh;
       height:100vh;
       position:static;
+      margin-bottom: 30px;
   }
 
 :root {
